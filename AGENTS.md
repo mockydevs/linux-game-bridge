@@ -8,4 +8,4 @@
 - Steam config changes require a normal Steam shutdown and an owner-only backup. Preserve every unrelated setting.
 - No hardcoded home directories. Support Steam libraries on separate drives.
 - Before a PR: cargo fmt --all -- --check; cargo clippy --locked --all-targets -- -D warnings; cargo test --locked; cargo audit.
-- Main is protected. Contribute through reviewed PRs. Release artifacts are early alpha until clean-machine and wider distro tests are documented.
+- Main is protected for contributors; use reviewed PRs by default. The repository owner has explicitly authorized owner/admin bypass for direct publishing. Release artifacts are early alpha until clean-machine and wider distro tests are documented.
