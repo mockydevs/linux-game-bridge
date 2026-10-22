@@ -2,16 +2,33 @@
 
 **Run TruckersMP on Linux with Steam Proton — without editing configuration files or copying Windows launchers by hand.**
 
+[![Download .deb for Ubuntu / Debian](https://img.shields.io/badge/Download-.deb%20for%20Ubuntu%20%2F%20Debian-2563eb?style=for-the-badge&logo=debian&logoColor=white)](https://github.com/mockydevs/linux-game-bridge/releases/download/v0.1.1/linux-game-bridge_0.1.1_amd64.deb)
+
+[Download version 0.1.1 (.deb)](https://github.com/mockydevs/linux-game-bridge/releases/download/v0.1.1/linux-game-bridge_0.1.1_amd64.deb) · [All releases and other downloads](https://github.com/mockydevs/linux-game-bridge/releases)
+
 Linux Game Bridge is an unofficial Rust desktop app and CLI. Its first supported game is **Euro Truck Simulator 2 with TruckersMP**. It uses the official Windows game and multiplayer client through Proton, connecting to the same official servers as Windows players.
 
 **Status: early alpha.** Tested on one Ubuntu desktop with native Steam and an AMD GPU. Broader distribution, hardware, and clean-machine testing is welcome. This is a compatibility assistant, not a native port of TruckersMP.
 
 ## Install
 
-Download a Linux x86_64 archive or Debian/Ubuntu package from [Releases](https://github.com/mockydevs/linux-game-bridge/releases).
+### Ubuntu / Debian (Intel or AMD 64-bit)
 
-- **Debian/Ubuntu:** open the `.deb` with your software installer. Alternatively, `sudo apt install ./linux-game-bridge_0.1.1_amd64.deb`.
-- **Other supported distributions:** extract the `.tar.gz` and run `./linux-game-bridge`. Use **Application settings → Add Linux Game Bridge to applications menu** to install it for your user.
+1. Click the **Download .deb** button above and save the package.
+2. Open the downloaded `.deb` with your software installer and select **Install**. Enter your computer's password if prompted.
+3. Open **Linux Game Bridge** from your applications menu, then follow [First drive](#first-drive) below to set up TruckersMP.
+
+If your desktop does not open `.deb` files, open a terminal in the folder where you saved the download and run:
+
+```sh
+sudo apt install ./linux-game-bridge_0.1.1_amd64.deb
+```
+
+Requires **Ubuntu 22.04+ or Debian 12+**, native Steam, and a purchased copy of ETS2. The app is still an early alpha.
+
+### Other supported distributions
+
+Download the Linux x86_64 `.tar.gz` from [Releases](https://github.com/mockydevs/linux-game-bridge/releases), extract it, and run `./linux-game-bridge`. Use **Application settings → Add Linux Game Bridge to applications menu** to install it for your user.
 
 The downloadable build targets **glibc 2.35 or newer** (Ubuntu 22.04+, Debian 12+, and comparable distributions). You need a working graphical desktop, OpenGL, Vulkan-capable graphics drivers for Proton, and **native Steam**. Flatpak Steam, ARM64, and musl-based distributions are not supported in this first release. Steam installation and GPU drivers remain the distribution's responsibility.
 
