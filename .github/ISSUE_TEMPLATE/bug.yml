@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a setup, update, or launch failure
+title: "[Bug] "
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Linux distro/version, graphics card/driver, native or Flatpak Steam, app version
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Steps, expected result, actual error, and whether Steam/ETS2 works without this app
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Relevant diagnostics
+      description: Paste only relevant errors. Never attach Steam config backups, credentials, or account tokens.
