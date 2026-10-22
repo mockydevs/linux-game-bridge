@@ -1,4 +1,4 @@
-# Verification for 0.1.0 alpha
+# Verification for 0.1.1 alpha
 
 The first release is a working alpha, not a claim that every Linux distribution or Windows game is supported.
 
@@ -29,3 +29,7 @@ The earlier manual prototype on this same machine was used by the owner to sign 
 - Unattended recovery from every Steam or publisher update, unsupported anti-cheat, and any game beyond ETS2/TruckersMP.
 
 Do not report an untested path as supported. Report failures through GitHub Issues with the distro, app/game/client/Proton versions and relevant errors; omit private Steam configuration and credentials.
+
+## Debian runtime correction
+
+A minimal Ubuntu 22.04 container exposed missing X11 runtime dependencies that were already installed on the development desktop. The package now declares X11/XCB, cursor/input, XKB and EGL libraries explicitly. After adding exactly those dependencies, the packaged executable completed its headless graphical smoke test with exit code 0. The missing-display CLI hint now uses the correct executable name.

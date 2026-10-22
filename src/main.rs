@@ -106,7 +106,7 @@ fn run() -> Result<()> {
                 Box::new(move |cc| Ok(Box::new(gui::App::new(cc, options, cli.smoke_ui)))),
             )
             .map_err(|e| anyhow::anyhow!("{e}"))
-            .context("Could not open desktop window. Use 'truckbridge doctor' for CLI diagnostics.")
+            .context("Could not open desktop window. Use 'linux-game-bridge doctor' for CLI diagnostics.")
         }
     }
 }

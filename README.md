@@ -10,7 +10,7 @@ Linux Game Bridge is an unofficial Rust desktop app and CLI. Its first supported
 
 Download a Linux x86_64 archive or Debian/Ubuntu package from [Releases](https://github.com/mockydevs/linux-game-bridge/releases).
 
-- **Debian/Ubuntu:** open the `.deb` with your software installer. Alternatively, `sudo apt install ./linux-game-bridge_0.1.0_amd64.deb`.
+- **Debian/Ubuntu:** open the `.deb` with your software installer. Alternatively, `sudo apt install ./linux-game-bridge_0.1.1_amd64.deb`.
 - **Other supported distributions:** extract the `.tar.gz` and run `./linux-game-bridge`. Use **Application settings → Add Linux Game Bridge to applications menu** to install it for your user.
 
 The downloadable build targets **glibc 2.35 or newer** (Ubuntu 22.04+, Debian 12+, and comparable distributions). You need a working graphical desktop, OpenGL, Vulkan-capable graphics drivers for Proton, and **native Steam**. Flatpak Steam, ARM64, and musl-based distributions are not supported in this first release. Steam installation and GPU drivers remain the distribution's responsibility.

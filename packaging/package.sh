@@ -24,7 +24,7 @@ Package: linux-game-bridge
 Version: $version
 Architecture: amd64
 Maintainer: Mocky Digital <mockydevs@users.noreply.github.com>
-Depends: libc6 (>= 2.35), libx11-6, libxkbcommon0, libgl1, libwayland-client0
+Depends: libc6 (>= 2.35), libx11-6, libx11-xcb1, libxcursor1, libxi6, libxrandr2, libxkbcommon0, libxkbcommon-x11-0, libgl1, libegl1, libwayland-client0
 Section: games
 Priority: optional
 Homepage: https://github.com/mockydevs/linux-game-bridge
